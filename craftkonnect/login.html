@@ -13,13 +13,22 @@
         </div>
         <div class="login-section">
             <h2>Welcome back, your next masterpiece starts here.</h2>
-            <button class="google-btn">Sign up with Google</button>
-            <p>Or use Email</p>
+            <button class="google-btn">
+                <img src="images/logo.jpg" alt="Google logo">
+                Sign up with Google
+            </button>
+            <div class="divider">
+                <span>Or use Email</span>
+            </div>
+
             <form id="login-form">
-                <input type="text" placeholder="E-mail/username" required>
+                <label for="email"><strong>E-mail/Username</strong></label>
+                <input type="text" id="email" placeholder="Email address" required>
+                <label for="password"><strong>Password</strong></label>
                 <input type="password" placeholder="Password" required>
+                
                 <div class="options">
-                    <label>
+                    <label class="remember-me">
                         <input type="checkbox"> Remember me
                     </label>
                     <a href="#">Forget Password?</a>

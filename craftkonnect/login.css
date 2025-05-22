@@ -12,9 +12,27 @@ body {
     display: flex;
     width: 60%;
     background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
+}
+#login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 0px;
+    text-align: left;
+    display: block;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+
 }
 
 .image-section {
@@ -32,7 +50,7 @@ body {
 }
 
 .login-section {
-    flex: 1;
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +68,7 @@ input {
     border-radius: 4px;
 }
 
-button {
+.login-btn {
     background-color: #8638e5;
     color: white;
     padding: 12px;
@@ -61,15 +79,69 @@ button {
     font-size: 16px;
 }
 
-button:hover {
-    background-color: #2980b9;
+.login-btn:hover {
+    background-color: #8638e5;
 }
-
+.google-btn {
+    display: flex;
+    background-color: #e9f8ec;
+    color: black;
+    padding: 12px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.google-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+}
+.google-btn:hover {
+    background-color:  #e9f8ec;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #e9f8ec;
+    margin: 0 10px;
+}
 .options {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+.remember-me input {
+    margin-right: 5px;
+    position: relative;
+    top: -2px;
+}
+.options a {
+    color: red;
+    margin-left: auto;
+}
+.options a:hover {
+    color: darkred;
 }
 
 @media screen {
