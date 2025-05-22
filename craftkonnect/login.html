@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftConnect Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="images/imagecraftkonnect.jpg" alt="Artisan working">
+        </div>
+        <div class="login-section">
+            <h2>Welcome back, your next masterpiece starts here.</h2>
+            <button class="google-btn">Sign up with Google</button>
+            <p>Or use Email</p>
+            <form id="login-form">
+                <input type="text" placeholder="E-mail/username" required>
+                <input type="password" placeholder="Password" required>
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="login-btn">Login to CraftConnect</button>
+            </form>
+            <p>Don’t have an account? <a href="signup.html">Create an account</a></p>
+            <p>By signing up to CraftConnect, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Login functionality coming soon!');
+        });
+    </script>
+</body>
+</html>
