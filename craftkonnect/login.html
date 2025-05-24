@@ -9,13 +9,13 @@
   <body>
     <div class="container">
       <div class="image-section">
-        <img src="images/imagecraftkonnect.jpg" alt="Artisan working" />
+        <img src="images/login-page.png" alt="Artisan working" />
       </div>
       <div class="login-section">
         <div class="login-header">
           <h1>Welcome back, your next masterpiece starts here.</h1>
           <button class="google-btn">
-            <img src="images/logo.jpg" alt="Google logo" />
+            <img src="images/google(1).png" alt="Google logo" />
             Sign up with Google
           </button>
           <div class="divider">
@@ -31,11 +31,13 @@
               id="email"
               placeholder="Email address"
               required
-            />
+          />
+            <div class="Eye-toggle">
             <label for="password"><strong>Password</strong></label>
-            <input type="password" placeholder="Password" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <span id="toggle-password" class="toggle-password" onclick="togglePassword()">👁️</span>
           </div>
-
+</div>
           <div class="options">
             <div class="remember-me">
               <input type="checkbox" />
@@ -60,11 +62,24 @@
 
     <script>
       document
-        .getElementById("login-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          alert("Login functionality coming soon!");
-        });
+    .getElementById("login-form")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Login functionality coming soon!");
+    });
+
+function togglePassword() {
+    const passwordInput = document.getElementById("password");
+    const toggleIcon = document.getElementById("toggle-password");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text"; 
+        toggleIcon.textContent = "🙈"; 
+    } else {
+        passwordInput.type = "password"; 
+        toggleIcon.textContent = "👁️"; 
+    }
+}
     </script>
   </body>
 </html>

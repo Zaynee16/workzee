@@ -21,40 +21,79 @@ body {
   overflow: hidden;
   padding: 20px;
 }
-
-label {
-  margin-bottom: 0px;
-  text-align: left;
-  display: block;
+#signup-form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.login-input input {
-  position: relative;
-  width: 95%;
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
 }
 
 input {
-  display: block;
+  width: 100%;
   padding: 10px;
-  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.image-section {
-  flex: 1;
+.checkbox-group {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.image-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
+.checkbox-group input {
+  margin-right: 5px;
 }
 
+.signup-btn {
+  background-color: #6200ea;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.signup-btn:hover {
+  background-color: #3700b3;
+}
+
+.google-signup {
+  display: flex;
+  justify-content: center;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4285F4;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
 .login-section {
   flex: 1;
   display: flex;
@@ -63,6 +102,13 @@ input {
   align-items: center;
   text-align: center;
 }
+.display-name {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  gap: 4px;
+}
+
 
 .login-header {
   display: flex;
@@ -72,6 +118,21 @@ input {
   max-width: 75%;
   width: 100%;
   margin: 0 auto;
+}
+.login-btn {
+  background-color: #8638e5;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #8638e5;
 }
 
 .google-btn {
@@ -96,6 +157,13 @@ input {
 .google-btn:hover {
   background-color: #e9f8ec;
 }
+.signup-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
 
 .divider {
   display: flex;
@@ -114,55 +182,24 @@ input {
   background-color: #e9f8ec;
   margin: 0 10px;
 }
-
-#login-form {
-  width: 100%;
-  max-width: 85%;
-  margin: 0 auto;
-  flex-direction: column;
-}
-
-.login-btn {
-  background-color: #8638e5;
-  color: white;
-  padding: 12px;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.login-btn:hover {
-  background-color: #8638e5;
-}
-
-.options {
-  position: relative;
-  display: flex;
-  gap: 4px;
-  padding: 0 6px;
-  align-items: center;
-  justify-content: space-between;
-  /* width: 100%; */
-}
-.remember-me {
+.display-name {
   display: flex;
   width: 200px;
-  align-items: center;
+  text-align: left;
   gap: 4px;
 }
-
-.options a {
-  color: red;
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.options a:hover {
-  color: darkred;
-}
 
-.login-footer {
-  padding: 0 16px;
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 850px) {
@@ -172,30 +209,14 @@ input {
     max-height: 100%;
     padding: 10px;
   }
-
-  #login-form {
-    max-width: 100%;
-  }
-
   .image-section img {
     width: 100%;
   }
-
-  .login-section {
-    flex: none;
-    width: 100%;
-  }
-
-  .login-header {
-    max-width: 100%;
-  }
-
   button {
     font-size: 14px;
     padding: 10px;
   }
 }
-
 .Eye-toggle {
     position: relative;
     display: flex;
