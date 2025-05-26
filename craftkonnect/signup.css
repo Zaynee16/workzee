@@ -28,24 +28,47 @@ label {
   display: block;
 }
 
-.signup-input input {
-  position: relative;
-  width: 95%;
-}
-
-.fullname-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
 input {
+  position: relative;
+  width: auto;
   display: block;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+#signup-form {
+  position: relative;
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.signup-input {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100%;
+}
+
+.signup-input input#email,
+.signup-input input#username {
+  width: 97%;
+}
+
+.fullname-group {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  gap: 10px;
+}
+
+.password-group {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  gap: 10px;
 }
 
 .image-section {
@@ -104,13 +127,6 @@ input {
   background-color: #e9f8ec;
 }
 
-.password-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
 .divider {
   display: flex;
   align-items: center;
@@ -129,13 +145,6 @@ input {
   margin: 0 10px;
 }
 
-#signup-form {
-  width: 100%;
-  max-width: 85%;
-  margin: 0 auto;
-  flex-direction: column;
-}
-
 .signup-btn {
   background-color: #8638e5;
   color: white;
@@ -151,32 +160,17 @@ input {
 .signup-btn:hover {
   background-color: #8638e5;
 }
-
-.options {
-  position: relative;
-  display: flex;
-  gap: 4px;
-  padding: 0 6px;
-  align-items: center;
-  justify-content: space-between;
-  /* width: 100%; */
-}
 .remember-me {
   display: flex;
-  width: 200px;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
 }
-
-.options a {
-  color: red;
-}
-.options a:hover {
-  color: darkred;
-}
-
 .signup-footer {
   padding: 0 16px;
+}
+
+.note {
+  text-align: left;
 }
 
 @media screen and (max-width: 850px) {
@@ -189,6 +183,21 @@ input {
 
   #signup-form {
     max-width: 100%;
+  }
+
+  .fullname-group {
+    grid-template-columns: auto;
+    gap: 2px;
+  }
+
+  .password-group {
+    grid-template-columns: auto;
+    gap: 2px;
+  }
+
+  .signup-input input#email,
+  .signup-input input#username {
+    width: 93%;
   }
 
   .image-section img {
