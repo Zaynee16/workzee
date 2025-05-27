@@ -16,4 +16,7 @@ function togglePassword() {
         passwordInput.type = "password"; 
         toggleIcon.textContent = "👁️"; 
     }
+    toggle.addEventListener('click', () => {
+        links.classList.toggle('active');
+    });
 }

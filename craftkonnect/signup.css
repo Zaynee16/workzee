@@ -7,8 +7,57 @@ body {
   margin: 0;
   padding: 10px;
   background-color: #f4f4f4;
+  flex-direction: column;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.sign1 {
+  background-color: #8638e5;
+  border-radius: 4px;
+  padding:8px;
+  color: white;
+}
+.logo h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.sp1 {
+  color:#8638e5;
+}
+
+.sp2 {
+  color: green;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+.navbar .nav-links li a.active,
+.navbar .nav-links li a:hover {
+  color: #2b67f6;
+  border-bottom: 2px solid #2b67f6;
+}
 .container {
   display: flex;
   height: 100%;
@@ -176,13 +225,43 @@ input {
   text-align: left;
 }
 
-@media screen and (max-width: 850px) {
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  colour: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     max-width: 100%;
     max-height: 100%;
     padding: 10px;
+    display: block;
   }
+
+  .menu-toggle {
+    display: block;
+  }
+  
+.navbar .nav-links {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.navbar .nav-links li a.active {
+  display: hidden;
+}
+.navbar .nav-links li a {
+  padding: 15px 0;
+}
 
   #signup-form {
     max-width: 100%;
