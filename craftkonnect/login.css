@@ -7,6 +7,71 @@ body {
   margin: 0;
   padding: 10px;
   background-color: #f4f4f4;
+  flex-direction: column;
+}
+.header {
+	display: flex;
+	background-color: var(--background-color);
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	height: 94px;
+	font-weight: bolder;
+	padding: 0% 60px;
+	/* position: fixed; */
+	/* position: sticky; */
+	/* top: 0; */
+}
+
+.logo a {
+	font-size: 28px;
+	line-height: 100%;
+	/* font-style: italic; */
+	text-decoration: none;
+	color: #333;
+	font-weight: bolder;
+	/* transition: transform 0.5s ease-in-out; */
+}
+
+.logo .sp1 {
+	color: var(--primary-color);
+}
+
+.logo .sp2 {
+	color: var(--alternate-color);
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+}
+
+.nav-links li {
+	margin: 0 15px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+a:hover {
+	color: var(--secondary-color);
+}
+
+.nav-links a.active {
+	/* text-decoration: underline;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 15px;
+	color: var(--primary-color); */
+
+	color: var(--primary-color);
+	text-decoration: none;
+	border-radius: 3px;
+	border-bottom: 3px solid var(--primary-color);
+	padding-left: 10px; /* Extends underline left */
+	padding-right: 10px; /* Extends underline right */
+	padding-bottom: 12px; /* Adjusts the space between text and underline */
 }
 
 .container {

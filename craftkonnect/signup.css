@@ -70,6 +70,9 @@ input {
   align-items: center;
   gap: 10px;
 }
+.stylecraft {
+  color:#8638e5;
+}
 
 .image-section {
   flex: 1;
