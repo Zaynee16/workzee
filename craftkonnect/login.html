@@ -8,25 +8,25 @@
   </head>
   <body>
     <header class="header">
-			<div class="logo">
-				<h2>
-					<a href="http://home.html"
-						><span class="sp1">Craft</span><span class="sp2">Connect</span></a
-					>
-				</h2>
-			</div>
+      <div class="logo">
+        <h2>
+          <a href="http://home.html"
+            ><span class="sp1">Craft</span><span class="sp2">Connect</span></a
+          >
+        </h2>
+      </div>
 
-			<nav class="navbar">
-				<ul class="nav-links">
-					<li><a href="about.html">Home</a></li>
-					<li><a href="about.html">Explore Artisans</a></li>
-					<li><a href="about.html">Become an Artisan</a></li>
-					<li><a href="about.html" class="active">About</a></li>
-					<li><a href="about.html">Contacts</a></li>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="about.html">Home</a></li>
+          <li><a href="about.html">Explore Artisans</a></li>
+          <li><a href="about.html">Become an Artisan</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="about.html">Contacts</a></li>
           <li><a href="about.html">Login</a></li>
           <li><a href="about.html">Sign up</a></li>
-				</ul>
-			</nav>
+        </ul>
+      </nav>
     </header>
     <div class="container">
       <div class="image-section">
@@ -52,13 +52,23 @@
               id="email"
               placeholder="Email address"
               required
-          />
+            />
             <div class="Eye-toggle">
-            <label for="password"><strong>Password</strong></label>
-            <input type="password" id="password" placeholder="Password" required />
-            <span id="toggle-password" class="toggle-password" onclick="togglePassword()">👁️</span>
+              <label for="password"><strong>Password</strong></label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <span
+                id="toggle-password"
+                class="toggle-password"
+                onclick="togglePassword()"
+                >👁️</span
+              >
+            </div>
           </div>
-</div>
           <div class="options">
             <div class="remember-me">
               <input type="checkbox" />
@@ -67,17 +77,18 @@
             <a href="#">Forget Password?</a>
           </div>
           <button type="submit" class="login-btn">Login to CraftConnect</button>
+          <div class="login-footer">
+            <p>
+              By signing up to CraftConnect, you agree to our
+              <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of Service</a>
+            </p>
+            <p>
+              Don&apos;t have an account?
+              <a href="signup.html">Create an account</a>
+            </p>
+          </div>
         </form>
-        <div class="login-footer">
-          <p>
-            By signing up to CraftConnect, you agree to our
-            <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>
-          </p>
-          <p>
-            Don&apos;t have an account?
-            <a href="signup.html">Create an account</a>
-          </p>
-        </div>
       </div>
     </div>
 
