@@ -1,25 +1,30 @@
 document
-    .getElementById("login-form")
-    .addEventListener("submit", function (event) {
-        event.preventDefault();
-        alert("Login functionality coming soon!");
-    });
+  .getElementById("login-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Login functionality coming soon!");
+  });
 
 function togglePassword() {
-    const passwordInput = document.getElementById("password");
-    const toggleIcon = document.getElementById("toggle-password");
+  const passwordInput = document.getElementById("password");
+  const toggleIcon = document.getElementById("toggle-password");
 
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text"; 
-        toggleIcon.textContent = "🙈"; 
-    } else {
-        passwordInput.type = "password"; 
-        toggleIcon.textContent = "👁️"; 
-    }
-    const toggle = document.getElementById("menu-toggle");
-    const links = document.getElementById("nav-links");
-
-    toggle.addEventListener('click', () => {
-        links.classList.toggle('active');
-    });
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleIcon.textContent = "🙈";
+  } else {
+    passwordInput.type = "password";
+    toggleIcon.textContent = "👁️";
+  }
 }
+const toggle = document.getElementById("menu-toggle");
+const links = document.getElementById("nav-links");
+const closeToggle = document.getElementById("close-toggle");
+
+toggle.addEventListener("click", () => {
+  links.classList.toggle("active");
+});
+
+closeToggle.addEventListener("click", () => {
+  links.classList.remove("active");
+});
