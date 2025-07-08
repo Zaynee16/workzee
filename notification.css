@@ -1,0 +1,155 @@
+.sp1 {
+  color: #8638e5;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.sp2 {
+  color: green;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+/* .sp1 {
+  color: #8638e5;
+}
+
+.sp2 {
+  color: green;
+} */
+
+.sidebar {
+  width: 220px;
+  background-color:#ddd;
+  color: black;
+  margin: bold;
+  padding: 20px;
+ /* height: 100vh;*/
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+  font-weight: bold;
+}
+
+.nav li .icon {
+  font-size: 22px;
+  font-weight: bold;
+}
+.sidebar .active {
+  font-weight: bold;
+  color: #1abc9c;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color:#f4f4f4;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .icons span,
+.topbar .profile-pic {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.notifications h1 {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.tabs {
+  margin: 20px 0;
+}
+
+.tab {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab.active {
+  background: #06a73b;
+  color: white;
+}
+
+#notificationList {
+  list-style: none;
+  padding: 0;
+}
+
+.notification {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #1abc9c;
+}
+
+.notification.read {
+  opacity: 0.6;
+}
+
+.brand {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+aside {
+  font-family: sans-serif;
+  color: #0f2521;
+  font-weight: bold;
+}

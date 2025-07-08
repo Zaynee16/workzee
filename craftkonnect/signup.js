@@ -16,7 +16,15 @@ function togglePassword() {
         passwordInput.type = "password"; 
         toggleIcon.textContent = "👁️"; 
     }
-    toggle.addEventListener('click', () => {
-        links.classList.toggle('active');
-    });
 }
+const toggle = document.getElementById("menu-toggle");
+const links = document.getElementById("nav-links");
+const closeToggle = document.getElementById("close-toggle");
+
+toggle.addEventListener("click", () => {
+  links.classList.toggle("active");
+});
+
+closeToggle.addEventListener("click", () => {
+  links.classList.remove("active");
+});
